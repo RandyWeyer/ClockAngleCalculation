@@ -19,10 +19,16 @@ namespace ClockAngle.Tests
       Assert.AreEqual(15, testClockAngle.CalculateClockAngle(6,30));
     }
     [TestMethod]
-    public void DoesThreeFifteen_Return_Fifteen()
+    public void DoesElevenOne_Return_ThirtyFivePointFive()
     {
       ClockAngle testClockAngle = new ClockAngle();
       Assert.AreEqual(35.5, testClockAngle.CalculateClockAngle(11,1));
+    }
+    [TestMethod]
+    public void DoesTwelveOClock_Return_Zero()
+    {
+      ClockAngle testClockAngle = new ClockAngle();
+      Assert.AreEqual(0, testClockAngle.CalculateClockAngle(12,0));
     }
 
   }
